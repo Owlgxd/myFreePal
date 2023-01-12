@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.AddWorkoutFragment">
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_enter_repititions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_enter_repititions"
+        app:layout_constraintTop_toTopOf="@+id/textView_enter_repititions" />
+
+    <TextView
+        android:id="@+id/textView_choose_exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_choose_exercise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_enter_repititions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_enter_repititions"
+        app:layout_constraintEnd_toEndOf="@+id/textView_choose_exercise"
+        app:layout_constraintStart_toStartOf="@+id/textView_choose_exercise"
+        app:layout_constraintTop_toBottomOf="@+id/textView_choose_exercise" />
+
+    <TextView
+        android:id="@+id/textView_enter_sets"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_enter_sets"
+        app:layout_constraintEnd_toEndOf="@+id/textView_enter_repititions"
+        app:layout_constraintStart_toStartOf="@+id/textView_enter_repititions"
+        app:layout_constraintTop_toBottomOf="@+id/textView_enter_repititions" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_choose_exercise"
+        app:layout_constraintEnd_toEndOf="@+id/editText_enter_reps"
+        app:layout_constraintStart_toStartOf="@+id/editText_enter_reps"
+        app:layout_constraintTop_toTopOf="@+id/textView_choose_exercise" />
+
+    <EditText
+        android:id="@+id/editText_enter_reps"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_enter_repititions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_enter_repititions"
+        app:layout_constraintTop_toTopOf="@+id/textView_enter_repititions" />
+
+    <EditText
+        android:id="@+id/editText_enter_sets"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_enter_sets"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber2"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber2"
+        app:layout_constraintTop_toTopOf="@+id/textView_enter_sets" />
+
+    <Button
+        android:id="@+id/button_save_workout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_save_workout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_enter_sets" />
+</androidx.constraintlayout.widget.ConstraintLayout>

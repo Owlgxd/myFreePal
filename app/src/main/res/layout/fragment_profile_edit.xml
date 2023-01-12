@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileEditFragment">
+
+
+    <TextView
+        android:id="@+id/textView_email_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_email"
+        app:layout_constraintBottom_toTopOf="@+id/textView_adress_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_height_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_height"
+        app:layout_constraintBottom_toTopOf="@+id/textView_weight_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_adress_edit" />
+
+    <TextView
+        android:id="@+id/textView_adress_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_adress"
+        app:layout_constraintBottom_toTopOf="@+id/textView_height_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_email_edit" />
+
+    <TextView
+        android:id="@+id/textView_weight_edit"
+        android:layout_width="41dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_weight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_height_edit" />
+
+    <Button
+        android:id="@+id/button_profile_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_profile_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_weight_edit" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_email_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_email_edit"
+        app:layout_constraintTop_toTopOf="@+id/textView_email_edit" />
+
+    <EditText
+        android:id="@+id/editTextAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_adress_edit"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toTopOf="@+id/textView_adress_edit" />
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_height_edit"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAdress"
+        app:layout_constraintStart_toStartOf="@+id/editTextAdress"
+        app:layout_constraintTop_toTopOf="@+id/textView_height_edit" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_weight_edit"
+        app:layout_constraintEnd_toEndOf="@+id/editTextHeight"
+        app:layout_constraintStart_toStartOf="@+id/editTextHeight"
+        app:layout_constraintTop_toTopOf="@+id/textView_weight_edit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

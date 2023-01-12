@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_email"
+        app:layout_constraintBottom_toTopOf="@+id/textView_adress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_height"
+        android:layout_width="49dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_height"
+        app:layout_constraintBottom_toTopOf="@+id/textView_weight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_adress" />
+
+    <TextView
+        android:id="@+id/textView_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_adress"
+        app:layout_constraintBottom_toTopOf="@+id/textView_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_email" />
+
+    <TextView
+        android:id="@+id/textView_weight"
+        android:layout_width="41dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_weight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_height" />
+
+    <TextView
+        android:id="@+id/textView_email_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_email_info"
+        app:layout_constraintBottom_toTopOf="@+id/textView_adress_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_email"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView_adress_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_adress_info"
+        app:layout_constraintBottom_toTopOf="@+id/textView_height_info"
+        app:layout_constraintEnd_toEndOf="@+id/textView_email_info"
+        app:layout_constraintStart_toStartOf="@+id/textView_email_info"
+        app:layout_constraintTop_toBottomOf="@+id/textView_email_info" />
+
+    <TextView
+        android:id="@+id/textView_height_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_height_info"
+        app:layout_constraintBottom_toTopOf="@+id/textView_weight_info"
+        app:layout_constraintEnd_toEndOf="@+id/textView_adress_info"
+        app:layout_constraintStart_toStartOf="@+id/textView_adress_info"
+        app:layout_constraintTop_toBottomOf="@+id/textView_adress_info" />
+
+    <TextView
+        android:id="@+id/textView_weight_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_weight_info"
+        app:layout_constraintEnd_toEndOf="@+id/textView_height_info"
+        app:layout_constraintStart_toStartOf="@+id/textView_height_info"
+        app:layout_constraintTop_toBottomOf="@+id/textView_height_info" />
+
+    <Button
+        android:id="@+id/button_profile_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_profile_change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_weight_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>

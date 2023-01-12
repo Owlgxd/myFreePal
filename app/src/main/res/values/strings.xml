@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">myFreePal</string>
+    <string name="title_home">Home</string>
+    <string name="title_new">Add Entry</string>
+    <string name="title_profile">Profile</string>
+    <string name="textView_email">E-Mail:</string>
+    <string name="textView_height">Height:</string>
+    <string name="textView_adress">Adress:</string>
+    <string name="textView_weight">Weight:</string>
+    <string name="textView_email_info">placeholder@gmail.com</string>
+    <string name="textView_height_info">%h cm</string>
+    <string name="textView_adress_info">placeholderstreet 2</string>
+    <string name="textView_weight_info">%w kg</string>
+    <string name="textView_exercise_name">Exercise name:</string>
+    <string name="textView_musclegroup">Choose Muscle:</string>
+    <string name="textView_choose_exercise">Choose Exercise:</string>
+    <string name="textView_enter_sets">Enter Sets:</string>
+    <string name="textView_enter_repititions">Enter Repititions:</string>
+    <string name="button_profile_change">Edit profile</string>
+    <string name="button_profile_save">Save changes</string>
+    <string name="button_add_workout">Add Workout</string>
+    <string name="button_add_exercise">Add Exercise</string>
+    <string name="button_add_weight">Add Weight</string>
+    <string name="button_save_weight">Save Weight</string>
+    <string name="button_save_exercise">Save Exercise</string>
+    <string name="button_save_workout">Save Workout</string>
+</resources>
